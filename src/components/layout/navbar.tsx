@@ -1,6 +1,5 @@
 "use client";
 
-import { LoginWrapper } from "@/components/auth/login-button";
 import Container from "@/components/container";
 import { Icons } from "@/components/icons/icons";
 import { ModeToggle } from "@/components/layout/mode-toggle";
@@ -19,7 +18,7 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { useScroll } from "@/hooks/use-scroll";
 import { cn } from "@/lib/utils";
 import type { DashboardConfig, MarketingConfig } from "@/types";
-import { ArrowRightIcon, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -111,18 +110,7 @@ export function Navbar({ scroll = false, config }: NavBarProps) {
               <div className="flex items-center">
                 <UserButton />
               </div>
-            ) : (
-              <LoginWrapper mode="modal" asChild>
-                <Button
-                  className="flex gap-2 px-5 rounded-full"
-                  variant="default"
-                  size="default"
-                >
-                  <span>Sign In</span>
-                  <ArrowRightIcon className="size-4" />
-                </Button>
-              </LoginWrapper>
-            )}
+            ) : null}
 
             {/* <ModeToggle /> */}
           </div>
@@ -206,18 +194,7 @@ export function Navbar({ scroll = false, config }: NavBarProps) {
               <div className="flex items-center">
                 <UserButton />
               </div>
-            ) : (
-              <LoginWrapper mode="redirect" asChild>
-                <Button
-                  className="flex gap-2 px-5 rounded-full"
-                  variant="default"
-                  size="default"
-                >
-                  <span>Sign In</span>
-                  <ArrowRightIcon className="size-4" />
-                </Button>
-              </LoginWrapper>
-            )}
+            ) : null}
 
             {/* <ModeToggle /> */}
           </div>
