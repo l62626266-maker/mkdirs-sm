@@ -11,9 +11,9 @@ export default function CategoryLayout({
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <HeaderSection
             labelAs="h1"
-            label="Category"
+            label="分类"
             titleAs="h2"
-            title="Explore by categories"
+            title="按分类浏览"
           />
 
           <div className="w-full">

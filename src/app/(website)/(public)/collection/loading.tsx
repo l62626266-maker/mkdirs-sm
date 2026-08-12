@@ -9,9 +9,9 @@ export default function Loading() {
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <HeaderSection
             labelAs="h1"
-            label="Collection"
+            label="合集"
             titleAs="h2"
-            title="Explore by collections"
+            title="浏览精选合集"
           />
         </div>
       </div>

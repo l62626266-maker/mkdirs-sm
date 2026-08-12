@@ -11,9 +11,9 @@ export default function SearchLayout({
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <HeaderSection
             labelAs="h1"
-            label="Search"
+            label="搜索"
             titleAs="h2"
-            title="Search anything you want"
+            title="搜索你需要的网站、工具与内容"
           />
 
           <div className="w-full">

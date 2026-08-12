@@ -23,7 +23,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import React from "react";
-import { Logo } from "../logo";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -72,8 +71,6 @@ export function Navbar({ scroll = false, config }: NavBarProps) {
           <div className="flex items-center gap-6 md:gap-10">
             {/* logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <Logo />
-
               <span className="text-xl font-bold">{siteConfig.name}</span>
             </Link>
 
@@ -141,8 +138,6 @@ export function Navbar({ scroll = false, config }: NavBarProps) {
                     className="flex items-center space-x-2 pl-4 pt-4"
                     onClick={() => setOpen(false)}
                   >
-                    <Logo />
-
                     <span className="text-xl font-bold">{siteConfig.name}</span>
                   </Link>
 
@@ -182,8 +177,6 @@ export function Navbar({ scroll = false, config }: NavBarProps) {
               className="flex items-center space-x-2"
               onClick={() => setOpen(false)}
             >
-              <Logo className="size-8" />
-
               <span className="text-xl font-bold">{siteConfig.name}</span>
             </Link>
           </div>

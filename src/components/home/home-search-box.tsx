@@ -63,7 +63,7 @@ export default function HomeSearchBox({ urlPrefix }: SearchBoxProps) {
     <div className="flex items-center justify-center">
       <Input
         type="text"
-        placeholder="Search any products you need"
+        placeholder="搜索网站、工具或内容"
         autoComplete="off"
         value={searchQuery}
         onChange={handleSearch}
@@ -74,7 +74,7 @@ export default function HomeSearchBox({ urlPrefix }: SearchBoxProps) {
       />
       <Button type="submit" className="rounded-l-none size-12">
         <SearchIcon className="size-6" aria-hidden="true" />
-        <span className="sr-only">Search</span>
+        <span className="sr-only">搜索</span>
       </Button>
     </div>
   );

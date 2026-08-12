@@ -29,7 +29,7 @@ export type SortFilterItem = {
 };
 
 export const DEFAULT_SORT: SortFilterItem = {
-  label: "Sort by Time (dsc)",
+  label: "时间从新到旧",
   slug: null,
   sortKey: "publishDate",
   reverse: true,
@@ -38,19 +38,19 @@ export const DEFAULT_SORT: SortFilterItem = {
 export const SORT_FILTER_LIST: SortFilterItem[] = [
   DEFAULT_SORT,
   {
-    label: "Sort by Time (asc)",
+    label: "时间从旧到新",
     slug: "date-asc",
     sortKey: "publishDate",
     reverse: false,
   },
   {
-    label: "Sort by Name (dsc)",
+    label: "名称降序",
     slug: "name-desc",
     sortKey: "name",
     reverse: true,
   },
   {
-    label: "Sort by Name (asc)",
+    label: "名称升序",
     slug: "name-asc",
     sortKey: "name",
     reverse: false,
@@ -63,7 +63,7 @@ export type QueryFilterItem = {
 };
 
 export const DEFAULT_QUERY: QueryFilterItem = {
-  label: "No Filter",
+  label: "不筛选",
   slug: null,
 };
 

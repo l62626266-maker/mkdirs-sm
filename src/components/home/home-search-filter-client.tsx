@@ -75,7 +75,7 @@ export function HomeSearchFilterClient({
   };
 
   const categoryFilterItemList = [
-    { value: DEFAULT_FILTER_VALUE, label: "All Categories" },
+    { value: DEFAULT_FILTER_VALUE, label: "全部分类" },
     ...categoryList.map((item) => ({
       value: item.slug,
       label: item.name,
@@ -112,8 +112,8 @@ export function HomeSearchFilterClient({
       <div className="flex md:hidden">
         <ResponsiveComboBox
           filterItemList={categoryFilterItemList}
-          placeholder="All Categories"
-          labelPrefix="Category: "
+          placeholder="全部分类"
+          labelPrefix="分类: "
           selectedValue={selectedCategory || DEFAULT_FILTER_VALUE}
           onValueChange={(value) => handleFilterChange("category", value)}
         />
@@ -142,7 +142,7 @@ export function HomeSearchFilterClient({
           )
         }
         value={selectedTag ? selectedTag.split(",") : []}
-        placeholder="Select tags"
+        placeholder="选择标签"
         variant="default"
         maxCount={1}
       />
@@ -162,7 +162,7 @@ export function HomeSearchFilterClient({
       />
 
       <Button variant="outline" onClick={handleResetFilters}>
-        Reset
+        重置
       </Button>
     </div>
   );

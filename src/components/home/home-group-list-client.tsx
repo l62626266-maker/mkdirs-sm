@@ -43,7 +43,7 @@ export function HomeGroupListClient({
 
   const categoryFilterItemList = [
     { value: DEFAULT_FILTER_VALUE, 
-      label: "All Categories",
+      label: "全部分类",
       subCategories: []
     },
     ...groupList.map((item) => ({

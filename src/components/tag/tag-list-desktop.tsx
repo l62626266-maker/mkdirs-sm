@@ -15,7 +15,7 @@ export function TagListDesktop({ tagList }: TagListDesktopProps) {
   return (
     <ScrollArea className="hidden md:flex w-full pb-4">
       <ul className="w-full flex flex-1 gap-x-2">
-        <FilterItemDesktop title="All" href="/tag" active={!slug} />
+        <FilterItemDesktop title="全部" href="/tag" active={!slug} />
 
         {tagList.map((item) => (
           <FilterItemDesktop

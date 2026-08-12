@@ -14,7 +14,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { sponsorItemListQuery } from "@/sanity/lib/queries";
 
 export const metadata = constructMetadata({
-  title: "Search",
+  title: "搜索",
   description: "Search for your needs",
   canonicalUrl: `${siteConfig.url}/search`,
 });

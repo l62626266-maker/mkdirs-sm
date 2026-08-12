@@ -3,27 +3,27 @@ import type { MarketingConfig } from "@/types";
 export const marketingConfig: MarketingConfig = {
   menus: [
     {
-      title: "Search",
+      title: "搜索",
       href: "/search",
       icon: "search",
     },
     {
-      title: "Collection",
+      title: "合集",
       href: "/collection",
       icon: "collection",
     },
     {
-      title: "Category",
+      title: "分类",
       href: "/category",
       icon: "category",
     },
     {
-      title: "Tag",
+      title: "标签",
       href: "/tag",
       icon: "tag",
     },
     {
-      title: "Blog",
+      title: "博客",
       href: "/blog",
       icon: "blog",
     },
