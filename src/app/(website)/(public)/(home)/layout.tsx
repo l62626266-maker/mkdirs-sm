@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import { HomeCategoryList } from "@/components/home/home-category-list";
 import HomeHero from "@/components/home/home-hero";
 import { HomeSearchFilter } from "@/components/home/home-search-filter";
+import { NewsletterCard } from "@/components/newsletter/newsletter-card";
 
 export default function HomeLayout({
   children,
@@ -26,6 +27,8 @@ export default function HomeLayout({
           </div>
         </div>
       </div>
+
+      <NewsletterCard />
     </Container>
   );
 }

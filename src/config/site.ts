@@ -3,18 +3,25 @@ import type { SiteConfig } from "@/types";
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "导航站",
-  tagline: "发现优质网站、工具与内容",
+  name: "Directory",
+  tagline:
+    "This is a demo site for Mkdirs, the best directory website template",
   description:
-    "发现和整理优质网站、在线工具与实用内容的中文导航站。",
+    "This is a demo site for Mkdirs template. Mkdirs is the ultimate directory website template. With Mkdirs, you can build any trending and profitable directory website in minutes, packed with Listings, Newsletter, Payment, CMS, Blog, Authentication, SEO, Themes and more",
   keywords: [
-    "导航站",
-    "网址导航",
-    "网站推荐",
-    "在线工具",
-    "实用内容",
+    "Directory",
+    "Template",
+    "Boilerplate",
+    "Next.js",
+    "Auth.js",
+    "Tailwindcss",
+    "Shadcn/ui",
+    "Resend",
+    "Sanity",
+    "Stripe",
+    "Vercel",
   ],
-  author: "导航站",
+  author: "Mkdirs",
   url: SITE_URL,
   logo: "/logo.png",
   // set the logoDark if you have put the logo-dark.png in the public folder

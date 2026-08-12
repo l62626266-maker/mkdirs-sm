@@ -40,21 +40,21 @@ export function BlogCategoryListMobile({
         <div className="flex items-center justify-between w-full gap-4">
           <div className="flex items-center gap-2">
             <LayoutListIcon className="size-5" />
-            <span className="text-sm">分类</span>
+            <span className="text-sm">Category</span>
           </div>
           <span className="text-sm">
-            {selectedCategory?.name ? `${selectedCategory?.name}` : "全部"}
+            {selectedCategory?.name ? `${selectedCategory?.name}` : "All"}
           </span>
         </div>
       </DrawerTrigger>
       <DrawerPortal>
         <DrawerOverlay className="fixed inset-0 z-40 bg-background/50" />
         <DrawerContent className="fixed inset-x-0 bottom-0 z-50 mt-24 overflow-hidden rounded-t-[10px] border bg-background">
-          <DrawerTitle className="sr-only">分类</DrawerTitle>
+          <DrawerTitle className="sr-only">Category</DrawerTitle>
 
           <ul className="mb-14 w-full p-3 text-muted-foreground">
             <FilterItemMobile
-              title="全部"
+              title="All"
               href="/blog"
               active={!slug}
               clickAction={closeDrawer}

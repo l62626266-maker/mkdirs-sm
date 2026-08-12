@@ -9,7 +9,7 @@ import { COLLECTIONS_PER_PAGE } from "@/lib/constants";
 import { constructMetadata } from "@/lib/metadata";
 
 export const metadata = constructMetadata({
-  title: "合集",
+  title: "Collection",
   description: "Explore by collection",
   canonicalUrl: `${siteConfig.url}/collection`,
 });
@@ -42,9 +42,9 @@ export default async function CollectionIndexPage({
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <HeaderSection
             labelAs="h1"
-            label="合集"
+            label="Collection"
             titleAs="h2"
-            title="浏览精选合集"
+            title="Explore by collections"
           />
         </div>
       </div>

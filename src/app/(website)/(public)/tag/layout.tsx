@@ -9,9 +9,9 @@ export default function TagLayout({ children }: { children: React.ReactNode }) {
         <div className="w-full flex flex-col items-center justify-center gap-8">
           <HeaderSection
             labelAs="h1"
-            label="标签"
+            label="Tag"
             titleAs="h2"
-            title="按标签浏览"
+            title="Explore by tags"
           />
 
           <div className="w-full">

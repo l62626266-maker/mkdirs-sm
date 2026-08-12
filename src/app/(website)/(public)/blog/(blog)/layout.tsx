@@ -1,5 +1,6 @@
 import { BlogCategoryFilter } from "@/components/blog/blog-category-filter";
 import Container from "@/components/container";
+import { NewsletterCard } from "@/components/newsletter/newsletter-card";
 import { HeaderSection } from "@/components/shared/header-section";
 
 export default async function BlogListLayout({
@@ -10,15 +11,19 @@ export default async function BlogListLayout({
       <div className="mt-8 w-full flex flex-col items-center justify-center gap-8">
         <HeaderSection
           labelAs="h1"
-          label="博客"
+          label="Blog"
           titleAs="h2"
-          title="阅读最新文章"
+          title="Read our latest blog posts"
         />
 
         <BlogCategoryFilter />
       </div>
 
       <Container className="mt-8">{children}</Container>
+
+      <Container className="mt-8">
+        <NewsletterCard />
+      </Container>
     </div>
   );
 }

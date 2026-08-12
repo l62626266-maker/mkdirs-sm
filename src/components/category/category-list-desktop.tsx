@@ -17,7 +17,7 @@ export function CategoryListDesktop({
   return (
     <ScrollArea className="hidden md:flex w-full pb-4">
       <ul className="flex gap-x-2">
-        <FilterItemDesktop title="全部" href="/category" active={!slug} />
+        <FilterItemDesktop title="All" href="/category" active={!slug} />
 
         {categoryList.map((item) => (
           <FilterItemDesktop

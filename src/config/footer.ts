@@ -3,27 +3,27 @@ import type { FooterConfig } from "@/types";
 export const footerConfig: FooterConfig = {
   links: [
     {
-      title: "导航",
+      title: "Product",
       items: [
-        { title: "搜索", href: "/search" },
-        { title: "合集", href: "/collection" },
-        { title: "分类", href: "/category" },
-        { title: "标签", href: "/tag" },
+        { title: "Search", href: "/search" },
+        { title: "Collection", href: "/collection" },
+        { title: "Category", href: "/category" },
+        { title: "Tag", href: "/tag" },
       ],
     },
     {
-      title: "内容",
+      title: "Resources",
       items: [
-        { title: "博客", href: "/blog" },
+        { title: "Blog", href: "/blog" },
       ],
     },
     {
-      title: "关于",
+      title: "Company",
       items: [
-        { title: "关于我们", href: "/about" },
-        { title: "隐私政策", href: "/privacy" },
-        { title: "服务条款", href: "/terms" },
-        { title: "网站地图", href: "/sitemap.xml" },
+        { title: "About Us", href: "/about" },
+        { title: "Privacy Policy", href: "/privacy" },
+        { title: "Terms of Service", href: "/terms" },
+        { title: "Sitemap", href: "/sitemap.xml" },
       ],
     },
   ],

@@ -29,9 +29,9 @@ export function TagListMobile({ tagList }: TagListMobileProps) {
         <div className="flex items-center justify-between w-full gap-4">
           <div className="flex items-center gap-2">
             <LayoutListIcon className="size-5" />
-            <span className="text-sm">标签</span>
+            <span className="text-sm">Tag</span>
           </div>
-          <span className="text-sm">{tag?.name ? `${tag?.name}` : "全部"}</span>
+          <span className="text-sm">{tag?.name ? `${tag?.name}` : "All"}</span>
         </div>
       </Drawer.Trigger>
       <Drawer.Overlay
@@ -40,14 +40,14 @@ export function TagListMobile({ tagList }: TagListMobileProps) {
       />
       <Drawer.Portal>
         <Drawer.Content className="fixed inset-x-0 bottom-0 z-50 mt-24 overflow-hidden rounded-t-[10px] border bg-background">
-          <Drawer.Title className="sr-only">标签</Drawer.Title>
+          <Drawer.Title className="sr-only">Tag</Drawer.Title>
           <div className="sticky top-0 z-20 flex w-full items-center justify-center bg-inherit">
             <div className="my-3 h-1.5 w-16 rounded-full bg-muted-foreground/20" />
           </div>
 
           <ul className="mb-14 w-full p-3 text-muted-foreground">
             <FilterItemMobile
-              title="全部"
+              title="All"
               href="/tag"
               active={!slug}
               clickAction={closeDrawer}

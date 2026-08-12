@@ -53,7 +53,7 @@ export default function SearchBox({ urlPrefix }: SearchBoxProps) {
         <input
           type="text"
           name="search"
-          placeholder="搜索..."
+          placeholder="Search..."
           autoComplete="off"
           value={searchQuery}
           onChange={handleSearch}

@@ -7,7 +7,7 @@ import { POSTS_PER_PAGE } from "@/lib/constants";
 import { constructMetadata } from "@/lib/metadata";
 
 export const metadata = constructMetadata({
-  title: "博客",
+  title: "Blog",
   description: "Read our latest blog posts",
   canonicalUrl: `${siteConfig.url}/blog`,
 });

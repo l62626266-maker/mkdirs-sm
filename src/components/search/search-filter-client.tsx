@@ -74,7 +74,7 @@ export function SearchFilterClient({
   };
 
   const categoryFilterItemList = [
-    { value: DEFAULT_FILTER_VALUE, label: "全部分类" },
+    { value: DEFAULT_FILTER_VALUE, label: "All Categories" },
     ...categoryList.map((item) => ({
       value: item.slug,
       label: item.name,
@@ -111,7 +111,7 @@ export function SearchFilterClient({
 
       <ResponsiveComboBox
         filterItemList={categoryFilterItemList}
-        placeholder="全部分类"
+        placeholder="All Categories"
         labelPrefix="Category: "
         selectedValue={selectedCategory || DEFAULT_FILTER_VALUE}
         onValueChange={(value) => handleFilterChange("category", value)}
@@ -140,7 +140,7 @@ export function SearchFilterClient({
           )
         }
         value={selectedTag ? selectedTag.split(",") : []}
-        placeholder="选择标签"
+        placeholder="Select tags"
         variant="default"
         maxCount={0}
       />
@@ -160,7 +160,7 @@ export function SearchFilterClient({
       />
 
       <Button variant="outline" onClick={handleResetFilters}>
-        重置
+        Reset
       </Button>
     </div>
   );

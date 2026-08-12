@@ -13,7 +13,7 @@ import type { SponsorItemListQueryResult } from "@/sanity.types";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { sponsorItemListQuery } from "@/sanity/lib/queries";
 export const metadata = constructMetadata({
-  title: "分类",
+  title: "Category",
   description: "Explore by category",
   canonicalUrl: `${siteConfig.url}/category`,
 });

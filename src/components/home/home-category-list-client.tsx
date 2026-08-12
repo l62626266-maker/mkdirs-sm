@@ -19,7 +19,7 @@ export function HomeCategoryListClient({
   const selectedCategory = searchParams.get("category") || DEFAULT_FILTER_VALUE;
 
   const categoryFilterItemList = [
-    { value: DEFAULT_FILTER_VALUE, label: "全部分类" },
+    { value: DEFAULT_FILTER_VALUE, label: "All Categories" },
     ...categoryList.map((item) => ({
       value: item.slug.current,
       label: item.name,
