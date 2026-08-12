@@ -7,26 +7,7 @@ import { ResetPasswordEmail } from "@/emails/reset-password";
 import VerifyEmail from "@/emails/verify-email";
 import { Resend } from "resend";
 
-let resendClient: Resend | undefined;
-
-function getResendClient() {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    throw new Error("RESEND_API_KEY is not configured");
-  }
-
-  resendClient ??= new Resend(apiKey);
-  return resendClient;
-}
-
-export const resend = {
-  get contacts() {
-    return getResendClient().contacts;
-  },
-  get emails() {
-    return getResendClient().emails;
-  },
-};
+export const resend = new Resend(process.env.RESEND_API_KEY);
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL;
 
